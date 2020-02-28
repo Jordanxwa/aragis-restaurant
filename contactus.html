@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+<title>Contact Us</title>
+<link rel="shortcut icon" type="images/png" href="images/favicon.png">
+<link href="css/restaurant.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Oswald:200|Raleway:500" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script>
+		
+		//Code for nav bar scroll
+		$(window).on('scroll' , function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('light');
+			}
+			
+			else $('nav').removeClass('light');
+		})
+		
+		//Code for responsive hamburger menu
+		$(document).ready(function(){
+			$(".menu").click(function(){
+				$("nav ul").toggleClass("active")
+			})
+		})
+	</script>
+</head>
+
+<body>
+	
+	<div class="responsive-bar">
+		<div class="logo">
+		<a href="index.html"><img src="images/logo1.png"></a></div>
+		<div class="menu">&#9776;</div>
+	</div>
+	<nav>
+		
+		<div class="logo"> <a href="index.html"><img src="../restaurant/images/logo1.png"></a></div>
+		<ul>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="hourslocation.html">Hours &amp; Location</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="privateevents.html">Private Events</a></li>
+		</ul>
+	</nav>
+	
+	
+	
+	<header class="contactHeader">
+	</header>
+	
+	<section class="contactTitle">
+		<h1>Contact Us</h1>
+		
+		<p>If you have any questions or concerns make sure to message us and we'll get back to you as soon as possible. You can also reach us by phone at (416)-345-6789. </p>
+	</section>
+	
+	
+	<section class="contactSection">
+		<article class="contactArticle">
+			
+			
+    	<input type="text" id="name" name="fname" placeholder="Name*">
+
+    	
+    	<input type="text" id="email" name="mail" placeholder="Email*">
+			
+		
+    	<input type="text" id="number" name="phone" placeholder="Phone Number*">
+			
+		<input type="text" id="message" name="msg" placeholder="Your Message">
+	
+	
+		</article>
+		
+		<div id="cntBtn"><a class="contentBtn">Submit</a></div>
+	</section>
+	
+	
+	
+	
+	<div class="mobilefooter">
+			<a href="contactus.html" class="mobileBtn">Contact Us
+		</a>
+	</div>
+	
+	<footer>
+			
+	  <div class="footergrid">
+			<div>
+				<img src="../restaurant/images/social-006-round_facebook.png">
+			
+				<img src="../restaurant/images/social-003-round_twitter.png">
+			
+				<img src="../restaurant/images/social-038-round_instagram.png">
+			</div>
+			
+			<div>
+				<p>888 College St.
+					Toronto, ON
+					M6H 1A1</p>
+					
+				<p>416-345-6789</p>
+					
+				<a class="contactBtn" href="contactus.html">Contact Us</a>
+				
+			</div>
+		</div>
+			
+	</footer>
+	
+</body>
+</html>

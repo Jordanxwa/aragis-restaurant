@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+<title>Menu</title>
+<link rel="shortcut icon" type="images/png" href="images/favicon.png">
+<link href="css/restaurant.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Oswald:200|Raleway:500" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script>
+		
+		//Code for nav bar scroll
+		$(window).on('scroll' , function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('light');
+			}
+			
+			else $('nav').removeClass('light');
+		})
+		
+		//Code for responsive hamburger menu
+		$(document).ready(function(){
+			$(".menu").click(function(){
+				$("nav ul").toggleClass("active")
+			})
+		})
+	</script>
+</head>	
+
+<body>
+		<div class="responsive-bar">
+		<div class="logo">
+		<a href="index.html"><img src="images/logo1.png"></a></div>
+		<div class="menu">&#9776;</div>
+	</div>
+	<nav>
+		
+		<div class="logo"> <a href="index.html"><img src="../restaurant/images/logo1.png"></a></div>
+		<ul>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="hourslocation.html">Hours &amp; Location</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="privateevents.html">Private Events</a></li>
+		</ul>
+	</nav>
+	
+	<header class="menuHeader">
+	</header>
+	
+	<menu class="menuTitle">
+	<h1>Menu</h1>
+	</menu>
+	
+	
+	<menu class="menuSection">
+			
+		<h1>Main</h1>
+		
+			<p>CANAPE
+			MONTEREY BAY ABALONE
+			matsutake mushroom, broccoli, brassica, black garlic</p>
+
+			<p>TSAR NICOULAI CAVIAR
+			gooseberry, cheese, sea grapes, burrata
+			</p>
+		
+		<h1>Sides</h1>
+		
+				<p>
+			GOLDEN OSETRA CAVIAR PANNA COTTA
+			supplement 75 per person</p>
+
+			<p>FRESH RUN FARM CELTUCE
+			kombu, finger lime &amp; lemon</p>
+
+			<p>GARGANELLI
+			maine lobster,shrimp, zucchini, anise hyssop</p>
+
+			<p>PAINE FARM SQUAB
+			porcini mushroom, cheese, parmigiano reggiano, extravecchio balsamico</p>
+
+			<p>LAMB IN DIVERSE PREPARATIONS
+			shelling bean,mushroom, fennel, jimmy nardello pepper</p>
+
+			<p>COLD QUINCE
+			tokaji, pepper, ginger</p>
+
+			<p>HOT QUINCE
+			huckleberry,pecan, hazelnut</p>
+
+		
+		<h1>Drinks</h1>
+		
+			<p>
+				RITA CORNITA
+				Our original frozen lime &amp; lemon margarita,
+				Sauza Gold Tequila, served with a Coronita.</p>
+
+				<p>CADILLAC MARGARITA
+				Our frozen lime &amp; lemon margarita,
+				Sauza Gold Tequila &amp; Grand Marnier.</p>
+
+				<p>PINK CADILLAC MARGARITA
+				Our frozen lime &amp; lemon margarita,
+				Sauza Gold Tequila, Grand Marnier.</p>
+
+				<p>SANGA-RITA
+				Our original frozen lime &amp; lemon margarita,
+				topped with red sangria.</p>
+
+				<p>HAND-SHAKEN BLACKBERRY MARGARITA
+				Hornitos Plata Tequila, Bols Triple Sec
+				lime &amp; lemon.</p>
+
+				<p>HAND-SHAKEN AVO SPICE MARGARITA
+				Sauza Gold Tequila, Bols Triple Sec, lime
+				&amp; citrus juices with lemon.</p>
+				
+
+				<p>HAND-SHAKEN WATERMELON MARGARITA
+				Hornitos Plata Tequila, Bols Triple Sec,
+				melon liqueur, lime &amp; citrus juices with lemon.</p>
+		
+	</menu>
+	
+	<div class="mobilefooter">
+			<a href="contactus.html" class="mobileBtn">Contact Us
+		</a>
+	</div>
+	
+	<footer>
+			
+	  <div class="footergrid">
+			<div>
+				<img src="../restaurant/images/social-006-round_facebook.png">
+			
+				<img src="../restaurant/images/social-003-round_twitter.png">
+			
+				<img src="../restaurant/images/social-038-round_instagram.png">
+			</div>
+			
+			<div>
+				<p>888 College St.
+					Toronto, ON
+					M6H 1A1</p>
+					
+				<p>416-345-6789</p>
+					
+				<a class="contactBtn" href="contactus.html">Contact Us</a>
+				
+			</div>
+		</div>
+			
+	</footer>
+	
+</body>
+</html>

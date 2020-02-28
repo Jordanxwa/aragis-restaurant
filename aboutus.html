@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+<title>About Us</title>
+<link rel="shortcut icon" type="images/png" href="images/favicon.png">
+<link href="css/restaurant.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Oswald:200|Raleway:500" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script>
+		
+		//Code for nav bar scroll
+		$(window).on('scroll' , function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('light');
+			}
+			
+			else $('nav').removeClass('light');
+		})
+		
+		//Code for responsive hamburger menu
+		$(document).ready(function(){
+			$(".menu").click(function(){
+				$("nav ul").toggleClass("active")
+			})
+		})
+	</script>
+</head>
+<body>
+		<div class="responsive-bar">
+		<div class="logo">
+		<a href="index.html"><img src="images/logo1.png"></a></div>
+		<div class="menu">&#9776;</div>
+	</div>
+	<nav>
+		
+		<div class="logo"> <a href="index.html"><img src="../restaurant/images/logo1.png"></a></div>
+		<ul>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="hourslocation.html">Hours &amp; Location</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="privateevents.html">Private Events</a></li>
+		</ul>
+	</nav>
+	
+	<header class="aboutheader">
+	</header>
+	
+	<section class="aboutUs">
+		<h1>About Us</h1>
+		
+		<p>
+		Aragi's is the perfect mixture of a modern aesthetic with authentic servies to deliver phenominal dishes to our custormers made with the leadership of out head chef. We Strive to give the best experience every time you come.
+		</p>
+		
+	</section>
+	
+	  <div class="aboutGridContainer">	
+		<section class="aboutUsGrid">
+		
+			<div>
+				<img src="images/aboutheadchef.jpeg" >
+				<h1>Greg Anthony</h1>
+				<p>Head Chef</p>
+			</div>
+			<div>
+				<img src="images/aboutdecuisine.jpeg" >
+				<h1>Carlos Gonzales</h1>
+				<p>Chef De Cuisine</p>	 
+			 </div>
+			<div>
+				<img src="images/aboutpartner.jpeg">
+				<h1>David Lee</h1>
+				<p>Partner</p>
+			</div>
+			<div>
+				<img src="images/aboutgm.jpeg">
+				<h1>Samantha Wieler</h1>
+				<p>General Manager</p>
+			</div>
+			<div>
+				<img src="images/aboutfinance.jpeg">
+				<h1>Marcus Brown</h1>
+				<p>Director Of Finance</p>
+			</div>
+			<div>
+				<img src="images/abouteventmng.jpeg">
+				<h1>Steven Smith</h1>
+				<p>Private Event Manager</p>
+			</div>
+		</section>
+	   </div>
+	
+	<div class="mobilefooter">
+			<a href="contactus.html" class="mobileBtn">Contact Us
+		</a>
+	</div>
+	
+	<footer>
+			
+		<div class="footergrid">
+			<div>
+				<img src="../restaurant/images/social-006-round_facebook.png">
+			
+				<img src="../restaurant/images/social-003-round_twitter.png">
+			
+				<img src="../restaurant/images/social-038-round_instagram.png">
+			</div>
+			
+			<div>
+				<p>888 College St.
+					Toronto, ON
+					M6H 1A1</p>
+					
+				<p>416-345-6789</p>
+					
+				<a class="contactBtn" href="contactus.html">Contact Us</a>
+				
+			</div>
+		</div>
+			
+	</footer>
+	
+</body>
+</html>

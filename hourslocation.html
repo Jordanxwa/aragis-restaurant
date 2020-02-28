@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+<title>Hours &amp; Location</title>
+<link rel="shortcut icon" type="images/png" href="images/favicon.png">
+<link href="css/restaurant.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Oswald:200|Raleway:500" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script>
+		
+		//Code for nav bar scroll
+		$(window).on('scroll' , function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('light');
+			}
+			
+			else $('nav').removeClass('light');
+		})
+		
+		//Code for responsive hamburger menu
+		$(document).ready(function(){
+			$(".menu").click(function(){
+				$("nav ul").toggleClass("active")
+			})
+		})
+	</script>
+</head>
+
+<body>
+		<div class="responsive-bar">
+		<div class="logo">
+		<a href="index.html"><img src="images/logo1.png"></a></div>
+		<div class="menu">&#9776;</div>
+	</div>
+	<nav>
+		
+		<div class="logo"> <a href="index.html"><img src="../restaurant/images/logo1.png"></a></div>
+		<ul>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="hourslocation.html">Hours &amp; Location</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="privateevents.html">Private Events</a></li>
+		</ul>
+	</nav>
+	
+	
+<header class="hoursHeader">
+	</header>
+	
+	<section class="hoursSection">
+		<h1>Hours &amp; Location</h1>
+		
+	  <p class="address">888 College St. Toronto, ON M6H 1A1</p>
+		
+	  <p class="available">
+			Brunch 11:00AM - 3PM, Weekends</p>
+		
+	  <p class="available">
+			Lunch 12PM - 3PM, Weekdays</p>
+		
+	  <p class="available">
+			Dinner 5PM - 10PM weekdays &amp; weekends</p>	
+	</section>
+	
+	<section class="location">
+		
+			<a class="contentBtn" href="https://www.google.ca/maps/place/888+College+St,+Toronto,+ON+M6H+1A3/@43.6541144,-79.4272242,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34f7e6bd383d:0xc032e6217dbdbdc4!8m2!3d43.6541105!4d-79.4250355" >Get Directions</a>
+		</section>
+	
+	
+	<div class="mobilefooter">
+			<a href="contactus.html" class="mobileBtn">Contact Us
+		</a>
+	</div>
+	
+	<footer>
+			
+	  <div class="footergrid">
+			<div>
+				<img src="../restaurant/images/social-006-round_facebook.png">
+			
+				<img src="../restaurant/images/social-003-round_twitter.png">
+			
+				<img src="../restaurant/images/social-038-round_instagram.png">
+			</div>
+			
+			<div>
+				<p>888 College St.
+					Toronto, ON
+					M6H 1A1</p>
+					
+				<p>416-345-6789</p>
+					
+				<a class="contactBtn" href="contactus.html">Contact Us</a>
+				
+			</div>
+		</div>
+			
+	</footer>
+	
+</body>
+</html>
